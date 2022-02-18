@@ -9,8 +9,9 @@
     android:rowCount="20"
     tools:context=".MainActivity">
 
+    <!--Away penalty score-->
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txtAwayPScore"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -20,8 +21,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Away conversion score-->
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtAwayCScore"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -31,7 +33,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Title-->
     <TextView
+        android:id="@+id/lblTitle"
         android:layout_width="305dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -43,7 +47,9 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
+    <!--Home team label-->
     <TextView
+        android:id="@+id/lblHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnSpan="2"
@@ -53,7 +59,9 @@
         android:layout_marginBottom="648dp"
         android:text="Home team:" />
 
+    <!--Away team label-->
     <TextView
+        android:id="@+id/lblAway"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -62,7 +70,9 @@
         android:layout_marginBottom="652dp"
         android:text="Away team:" />
 
+    <!--Home team Try label-->
     <TextView
+        android:id="@+id/lblHomeTry"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -72,8 +82,9 @@
         android:background="#8BC34A"
         android:text="Try" />
 
+    <!--Home team Final Score label-->
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/lblHomeFScore"
         android:layout_width="198dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -83,8 +94,9 @@
         android:background="#00BCD4"
         android:text="Final Score" />
 
+    <!--Away team Final Score label-->
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/lblAwayFScore"
         android:layout_width="198dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -94,7 +106,9 @@
         android:background="#00BCD4"
         android:text="Final Score" />
 
+    <!--Home team Try label-->
     <TextView
+        android:id="@+id/lblHomeConversion"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -104,7 +118,9 @@
         android:background="#8BC34A"
         android:text="Conversion" />
 
+    <!--Away team Try label-->
     <TextView
+        android:id="@+id/lblAwayTry"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -114,7 +130,9 @@
         android:background="#8BC34A"
         android:text="Try" />
 
+    <!--Home team Penalty label-->
     <TextView
+        android:id="@+id/lblHomePenalty"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -124,8 +142,9 @@
         android:background="#8BC34A"
         android:text="Penalty" />
 
+    <!--Away Penalty label-->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lblAwayPenalty"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -135,8 +154,9 @@
         android:background="#8BC34A"
         android:text="Penalty" />
 
+    <!--Home team Drop goal label-->
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/lblHomeDrop"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -146,8 +166,9 @@
         android:background="#8BC34A"
         android:text="Drop goal" />
 
+    <!--Away team Drop goal label-->
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblAwayDrop"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -157,8 +178,9 @@
         android:background="#8BC34A"
         android:text="Drop goal" />
 
+    <!--Away Drop goal Scores-->
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtAwayDScore"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -168,7 +190,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Away Try score-->
     <TextView
+        android:id="@+id/txtAwayTScore"
         android:layout_width="104dp"
         android:layout_height="280dp"
         android:layout_alignParentEnd="true"
@@ -178,7 +202,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Home Try score-->
     <TextView
+        android:id="@+id/txtHomeTScore"
         android:layout_width="106dp"
         android:layout_height="281dp"
         android:layout_alignParentEnd="true"
@@ -188,8 +214,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Home Final score-->
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/txtHomeFScore"
         android:layout_width="196dp"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -199,8 +226,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Away Final score-->
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/txtAwayFScore"
         android:layout_width="196dp"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -210,8 +238,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Home Conversion score-->
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtHomeCScore"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -221,8 +250,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Home penalty score-->
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtHomePScore"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -232,8 +262,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Home Drop goal score-->
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtHomeDScore"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
@@ -243,7 +274,9 @@
         android:background="#C8BFBF"
         android:text="Scores go here" />
 
+    <!--Away Conversion label-->
     <TextView
+        android:id="@+id/lblAwayConversion"
         android:layout_width="93dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -253,8 +286,9 @@
         android:background="#8BC34A"
         android:text="Conversion" />
 
+    <!--Home team name textbox-->
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtHomeTeamName"
         android:layout_width="119dp"
         android:layout_height="19dp"
         android:layout_alignParentEnd="true"
@@ -265,8 +299,9 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
+    <!--Away team name textbox-->
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edtAwayTeamName"
         android:layout_width="119dp"
         android:layout_height="19dp"
         android:layout_alignParentEnd="true"
@@ -277,8 +312,9 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
+    <!--Home + Try button-->
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnHomePT"
         android:layout_width="99dp"
         android:layout_height="31dp"
         android:layout_alignParentEnd="true"
@@ -288,8 +324,9 @@
         android:text="+ Try"
         android:textSize="8sp" />
 
+    <!--Away + Try button-->
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAwayPT"
         android:layout_width="98dp"
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
@@ -299,8 +336,9 @@
         android:text="+ Try"
         android:textSize="8sp" />
 
+    <!--Away - Try button-->
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnAwayNT"
         android:layout_width="97dp"
         android:layout_height="31dp"
         android:layout_alignParentEnd="true"
@@ -311,8 +349,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Home + Conversion button-->
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnHomePC"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
@@ -322,8 +361,9 @@
         android:text="+ Conversion"
         android:textSize="8sp" />
 
+    <!--Home - Conversion button-->
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnHomeNC"
         android:layout_width="wrap_content"
         android:layout_height="31dp"
         android:layout_alignParentEnd="true"
@@ -334,8 +374,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Home - Try button-->
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnHomeNT"
         android:layout_width="98dp"
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
@@ -346,8 +387,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Home - Penalty button-->
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btnHomeNP"
         android:layout_width="98dp"
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
@@ -358,8 +400,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Home - Drop goal button-->
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/btnHomeND"
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:layout_alignParentEnd="true"
@@ -370,8 +413,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Away + Conversion button-->
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnAwayPC"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
@@ -381,8 +425,9 @@
         android:text="+ Conversion"
         android:textSize="8sp" />
 
+    <!--Away - Conversion button-->
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnAwayNC"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
@@ -393,8 +438,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Home + Penalty button-->
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnHomePP"
         android:layout_width="100dp"
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
@@ -404,8 +450,9 @@
         android:text="+ Penalty"
         android:textSize="8sp" />
 
+    <!--Away + Penalty button-->
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btnAwayPP"
         android:layout_width="99dp"
         android:layout_height="31dp"
         android:layout_alignParentEnd="true"
@@ -415,8 +462,9 @@
         android:text="+ Penalty"
         android:textSize="8sp" />
 
+    <!--Away - Penalty button-->
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btnAwayNP"
         android:layout_width="97dp"
         android:layout_height="31dp"
         android:layout_alignParentEnd="true"
@@ -427,8 +475,9 @@
         android:textSize="8sp"
         app:backgroundTint="#E91E63" />
 
+    <!--Home + Drop goal button-->
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btnHomePD"
         android:layout_width="100dp"
         android:layout_height="38dp"
         android:layout_alignParentEnd="true"
@@ -438,8 +487,9 @@
         android:text="+ Drop goal"
         android:textSize="8sp" />
 
+    <!--Away + Drop goal button-->
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btnAwayPD"
         android:layout_width="99dp"
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
@@ -449,8 +499,9 @@
         android:text="+ Drop goal"
         android:textSize="8sp" />
 
+    <!--Away - Drop goal button-->
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btnAwayND"
         android:layout_width="96dp"
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
