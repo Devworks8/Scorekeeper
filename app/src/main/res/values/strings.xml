@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Scorekeeper</string>
+
+    <!-- Main activity -->
+    <string name="txtScoresPlaceholder">0</string>
+    <string name="lblTitle">Rugby Scorecard</string>
+    <string name="lblHome">Home team:</string>
+    <string name="lblAway">Away team:</string>
+    <string name="lblTry">Try</string>
+    <string name="lblFinalScore">Final Score</string>
+    <string name="lblConversion">Conversion</string>
+    <string name="lblPenalty">Penalty</string>
+    <string name="lblDrop">Drop goal</string>
+    <string name="edtTeamName">Name</string>
+    <string name="btnPT">+ Try</string>
+    <string name="btnNT">- Try</string>
+    <string name="btnPC">+ Conversion</string>
+    <string name="btnNC">- Conversion</string>
+    <string name="btnNP">- Penalty</string>
+    <string name="btnND">- Drop goal</string>
+    <string name="btnPP">+ Penalty</string>
+    <string name="btnPD">+ Drop goal</string>
+    <string name="btnReset">Reset</string>
+
 </resources>
