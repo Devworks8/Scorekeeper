@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BFBDBD"
     android:columnCount="5"
     android:rowCount="20"
     tools:context=".MainActivity">
@@ -13,320 +12,188 @@
     <!--Away Try score-->
     <TextView
         android:id="@+id/txtAwayTScore"
-        android:layout_width="104dp"
-        android:layout_height="280dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="99dp"
-        android:layout_marginBottom="268dp"
-        android:background="#C8BFBF"
+        style="@style/LargeTextViewMarginAttributesRight"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Away + Drop goal button-->
     <Button
         android:id="@+id/btnAwayPD"
-        android:layout_width="99dp"
-        android:layout_height="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="4dp"
-        android:text="@string/btnPD"
-        android:textSize="8sp" />
+        style="@style/ButtonAttributesExtInnerRight"
+        android:layout_marginBottom="5dp"
+        android:text="@string/btnPD" />
 
     <!--Away - Penalty button-->
     <Button
         android:id="@+id/btnAwayNP"
-        android:layout_width="97dp"
-        android:layout_height="31dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="3dp"
+        style="@style/ButtonAttributesExtOuterRight"
         android:layout_marginBottom="38dp"
         android:text="@string/btnNP"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Away + Penalty button-->
     <Button
         android:id="@+id/btnAwayPP"
-        android:layout_width="99dp"
-        android:layout_height="31dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="101dp"
+        style="@style/ButtonAttributesExtInnerRight"
         android:layout_marginBottom="38dp"
-        android:text="@string/btnPP"
-        android:textSize="8sp" />
+        android:text="@string/btnPP" />
 
     <!--Away + Conversion button-->
     <Button
         android:id="@+id/btnAwayPC"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="103dp"
+        style="@style/ButtonAttributesExtInnerRight"
         android:layout_marginBottom="72dp"
-        android:text="@string/btnPC"
-        android:textSize="8sp" />
+        android:text="@string/btnPC" />
 
     <!--Away - Conversion button-->
     <Button
         android:id="@+id/btnAwayNC"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="73dp"
+        style="@style/ButtonAttributesExtOuterRight"
+        android:layout_marginBottom="72dp"
         android:text="@string/btnNC"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Away - Try button-->
     <Button
         android:id="@+id/btnAwayNT"
-        android:layout_width="97dp"
-        android:layout_height="31dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="108dp"
+        style="@style/ButtonAttributesExtOuterRight"
+        android:layout_marginBottom="105dp"
         android:text="@string/btnNT"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Away + Try button-->
     <Button
         android:id="@+id/btnAwayPT"
-        android:layout_width="98dp"
-        android:layout_height="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="107dp"
-        android:text="@string/btnPT"
-        android:textSize="8sp" />
+        style="@style/ButtonAttributesExtInnerRight"
+        android:layout_marginBottom="105dp"
+        android:text="@string/btnPT" />
 
     <!--Home - Drop goal button-->
     <Button
         android:id="@+id/btnHomeND"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="211dp"
-        android:layout_marginBottom="6dp"
+        style="@style/ButtonAttributesExtInnerLeft"
+        android:layout_marginBottom="5dp"
         android:text="@string/btnND"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Home - Penalty button-->
     <Button
         android:id="@+id/btnHomeNP"
-        android:layout_width="98dp"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="43dp"
+        style="@style/ButtonAttributesExtInnerLeft"
+        android:layout_marginBottom="38dp"
         android:text="@string/btnNP"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Home - Conversion button-->
     <Button
         android:id="@+id/btnHomeNC"
-        android:layout_width="wrap_content"
-        android:layout_height="31dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="76dp"
+        style="@style/ButtonAttributesExtInnerLeft"
+        android:layout_marginBottom="72dp"
         android:text="@string/btnNC"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Home - Try button-->
     <Button
         android:id="@+id/btnHomeNT"
-        android:layout_width="98dp"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="110dp"
+        style="@style/ButtonAttributesExtInnerLeft"
+        android:layout_marginBottom="105dp"
         android:text="@string/btnNT"
-        android:textSize="8sp"
-        app:backgroundTint="#E91E63" />
+        app:backgroundTint="@color/btnRed" />
 
     <!--Home + Try button-->
     <Button
         android:id="@+id/btnHomePT"
-        android:layout_width="99dp"
-        android:layout_height="31dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="110dp"
-        android:text="@string/btnPT"
-        android:textSize="8sp" />
+        style="@style/ButtonAttributesExtOuterLeft"
+        android:layout_marginBottom="105dp"
+        android:text="@string/btnPT" />
 
     <!--Home + Conversion button-->
     <Button
         android:id="@+id/btnHomePC"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="314dp"
-        android:layout_marginBottom="76dp"
-        android:text="@string/btnPC"
-        android:textSize="8sp" />
+        style="@style/ButtonAttributesExtOuterLeft"
+        android:layout_marginBottom="72dp"
+        android:text="@string/btnPC" />
 
     <!--Home + Penalty button-->
     <Button
         android:id="@+id/btnHomePP"
-        android:layout_width="100dp"
-        android:layout_height="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="314dp"
-        android:layout_marginBottom="45dp"
-        android:text="@string/btnPP"
-        android:textSize="8sp" />
+        style="@style/ButtonAttributesExtOuterLeft"
+        android:layout_marginBottom="38dp"
+        android:text="@string/btnPP" />
 
     <!--Home + Drop goal button-->
     <Button
         android:id="@+id/btnHomePD"
-        android:layout_width="100dp"
-        android:layout_height="38dp"
-        android:layout_alignParentEnd="true"
+        style="@style/ButtonAttributesExtOuterLeft"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="312dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/btnPD"
-        android:textSize="8sp" />
+        android:text="@string/btnPD" />
 
-    <!--Home team Final Score label-->
+    <!--Home team Final Score-->
     <TextView
         android:id="@+id/txtHomeFScore"
-        android:layout_width="196dp"
-        android:layout_height="80dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="155dp"
-        android:background="#C8BFBF"
+        style="@style/MediumTextViewMarginAttributesLeft"
         android:text="@string/txtScoresPlaceholder" />
 
-    <!--Home Final score-->
+    <!--Home Final score label-->
     <TextView
         android:id="@+id/lblHomeFScore"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="214dp"
+        style="@style/MediumHeaderTextViewMarginAttributesLeft"
         android:layout_marginBottom="236dp"
-        android:background="#00BCD4"
         android:text="@string/lblFinalScore" />
 
     <!--Away team Final Score label-->
     <TextView
         android:id="@+id/txtAwayFScore"
-        android:layout_width="196dp"
-        android:layout_height="80dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="155dp"
-        android:background="#C8BFBF"
+        style="@style/MediumTextViewMarginAttributesRight"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Away Final score-->
     <TextView
         android:id="@+id/lblAwayFScore"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="5dp"
+        style="@style/MediumHeaderTextViewMarginAttributesRight"
         android:layout_marginBottom="236dp"
-        android:background="#00BCD4"
         android:text="@string/lblFinalScore" />
 
     <!--Away Drop goal Scores-->
     <TextView
         android:id="@+id/txtAwayDScore"
-        android:layout_width="93dp"
-        android:layout_height="85dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="262dp"
-        android:background="#C8BFBF"
+        style="@style/SmallTextViewMarginAttributesRight"
+        android:layout_marginBottom="260dp"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Away team Drop goal label-->
     <TextView
         android:id="@+id/lblAwayDrop"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="348dp"
-        android:background="#8BC34A"
+        style="@style/SmallHeaderTextViewMarginAttributesRight"
+        android:layout_marginBottom="344dp"
         android:text="@string/lblDrop" />
 
     <!--Away penalty score-->
     <TextView
         android:id="@+id/txtAwayPScore"
-        android:layout_width="91dp"
-        android:layout_height="84dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="364dp"
-        android:background="#C8BFBF"
+        style="@style/SmallTextViewMarginAttributesRight"
+        android:layout_marginBottom="363dp"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Away Penalty label-->
     <TextView
         android:id="@+id/lblAwayPenalty"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="450dp"
-        android:background="#8BC34A"
+        style="@style/SmallHeaderTextViewMarginAttributesRight"
+        android:layout_marginBottom="447dp"
         android:text="@string/lblPenalty" />
 
     <!--Away conversion score-->
     <TextView
         android:id="@+id/txtAwayCScore"
-        android:layout_width="92dp"
-        android:layout_height="80dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="468dp"
-        android:background="#C8BFBF"
+        style="@style/SmallTextViewMarginAttributesRight"
+        android:layout_marginBottom="466dp"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Away Conversion label-->
     <TextView
         android:id="@+id/lblAwayConversion"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="6dp"
+        style="@style/SmallHeaderTextViewMarginAttributesRight"
         android:layout_marginBottom="550dp"
-        android:background="#8BC34A"
         android:text="@string/lblConversion" />
 
     <!--Away team name textbox-->
@@ -357,109 +224,65 @@
     <!--Away team Try label-->
     <TextView
         android:id="@+id/lblAwayTry"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="100dp"
+        style="@style/LargeHeaderTextViewMarginAttributesRight"
         android:layout_marginBottom="550dp"
-        android:background="#8BC34A"
         android:text="@string/lblTry" />
 
     <!--Home team Conversion label-->
     <TextView
         android:id="@+id/lblHomeConversion"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
+        style="@style/SmallHeaderTextViewMarginAttributesLeft"
         android:layout_marginBottom="550dp"
-        android:background="#8BC34A"
         android:text="@string/lblConversion" />
 
     <!--Home Conversion score-->
     <TextView
         android:id="@+id/txtHomeCScore"
-        android:layout_width="93dp"
-        android:layout_height="82dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="214dp"
-        android:layout_marginBottom="468dp"
-        android:background="#C8BFBF"
+        style="@style/SmallTextViewMarginAttributesLeft"
+        android:layout_marginBottom="466dp"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Home team Penalty label-->
     <TextView
         android:id="@+id/lblHomePenalty"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="450dp"
-        android:background="#8BC34A"
+        style="@style/SmallHeaderTextViewMarginAttributesLeft"
+        android:layout_marginBottom="447dp"
         android:text="@string/lblPenalty" />
 
     <!--Home penalty score-->
     <TextView
         android:id="@+id/txtHomePScore"
-        android:layout_width="95dp"
-        android:layout_height="80dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="369dp"
-        android:background="#C8BFBF"
+        style="@style/SmallTextViewMarginAttributesLeft"
+        android:layout_marginBottom="363dp"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Home team Drop goal label-->
     <TextView
         android:id="@+id/lblHomeDrop"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="214dp"
-        android:layout_marginBottom="348dp"
-        android:background="#8BC34A"
+        style="@style/SmallHeaderTextViewMarginAttributesLeft"
+        android:layout_marginBottom="344dp"
         android:text="@string/lblDrop" />
 
     <!--Home Drop goal score-->
     <TextView
         android:id="@+id/txtHomeDScore"
-        android:layout_width="94dp"
-        android:layout_height="84dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="264dp"
-        android:background="#C8BFBF"
+        style="@style/SmallTextViewMarginAttributesLeft"
+        android:layout_marginBottom="260dp"
         android:text="@string/txtScoresPlaceholder" />
 
     <!--Home Try score-->
-    <TextView
-        android:id="@+id/txtHomeTScore"
-        android:layout_width="106dp"
-        android:layout_height="281dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="308dp"
-        android:layout_marginBottom="270dp"
-        android:background="#C8BFBF"
-        android:text="@string/txtScoresPlaceholder" />
 
     <!--Home team Try label-->
+
+    <TextView
+        android:id="@+id/txtHomeTScore"
+        style="@style/LargeTextViewMarginAttributesLeft"
+        android:text="@string/txtScoresPlaceholder" />
+
     <TextView
         android:id="@+id/lblHomeTry"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="308dp"
+        style="@style/LargeHeaderTextViewMarginAttributesLeft"
         android:layout_marginBottom="550dp"
-        android:background="#8BC34A"
         android:text="@string/lblTry" />
 
     <!--Home team label-->
@@ -498,18 +321,15 @@
         android:layout_marginEnd="109dp"
         android:layout_marginBottom="617dp"
         android:text="@string/lblTitle"
-        android:textColor="#FA0303"
+        android:textColor="@color/btnRed"
         android:textSize="34sp"
         android:textStyle="bold" />
 
     <!--Away - Drop goal button-->
     <Button
         android:id="@+id/btnAwayND"
-        android:layout_width="96dp"
-        android:layout_height="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
+        style="@style/ButtonAttributesExtOuterRight"
+        android:layout_marginEnd="2dp"
         android:layout_marginBottom="5dp"
         android:text="@string/btnND"
         android:textSize="8sp"

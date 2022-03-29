@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Button style -->
+    <style name="CommonButtonAttributes" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <!-- Extended Button style -->
+    <style name="ButtonAttributesExtOuterLeft" parent="@style/CommonButtonAttributes">
+        <item name="android:layout_marginEnd">315dp</item>
+    </style>
+    <style name="ButtonAttributesExtInnerLeft" parent="@style/CommonButtonAttributes">
+        <item name="android:layout_marginEnd">211dp</item>
+    </style>
+    <style name="ButtonAttributesExtInnerRight" parent="@style/CommonButtonAttributes">
+        <item name="android:layout_marginEnd">106dp</item>
+    </style>
+    <style name="ButtonAttributesExtOuterRight" parent="@style/CommonButtonAttributes">
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+
+    <!-- Common TextView styles -->
+    <style name="CommonTextViewAttributes" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">#635454</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Extended TextView styles -->
+    <style name="SmallTextViewAttributes" parent="@style/CommonTextViewAttributes">
+        <item name="android:layout_width">94dp</item>
+        <item name="android:layout_height">84dp</item>
+    </style>
+    <style name="MediumTextViewAttributes" parent="@style/CommonTextViewAttributes">
+        <item name="android:layout_width">203dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginBottom">150dp</item>
+    </style>
+    <style name="LargeTextViewAttributes" parent="@style/CommonTextViewAttributes">
+        <item name="android:layout_width">106dp</item>
+        <item name="android:layout_height">290dp</item>
+        <item name="android:layout_marginBottom">260dp</item>
+    </style>
+
+    <!--  Extended TextView Header styles -->
+    <style name="SmallHeaderTextViewAttributes" parent="@style/CommonTextViewAttributes">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">94dp</item>
+        <item name="android:background">#463CD3</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="MediumHeaderTextViewAttributes" parent="@style/CommonTextViewAttributes">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">203dp</item>
+        <item name="android:background">#463CD3</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="LargeHeaderTextViewAttributes" parent="@style/CommonTextViewAttributes">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">106dp</item>
+        <item name="android:background">#463CD3</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Extended TextView margin styles -->
+    <style name="SmallTextViewMarginAttributesLeft" parent="@style/SmallTextViewAttributes">
+        <item name="android:layout_marginEnd">211dp</item>
+    </style>
+    <style name="SmallTextViewMarginAttributesRight" parent="@style/SmallTextViewAttributes">
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+    <style name="MediumTextViewMarginAttributesLeft" parent="@style/MediumTextViewAttributes">
+        <item name="android:layout_marginEnd">211dp</item>
+    </style>
+    <style name="MediumTextViewMarginAttributesRight" parent="@style/MediumTextViewAttributes">
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+    <style name="LargeTextViewMarginAttributesLeft" parent="@style/LargeTextViewAttributes">
+        <item name="android:layout_marginEnd">308dp</item>
+    </style>
+    <style name="LargeTextViewMarginAttributesRight" parent="@style/LargeTextViewAttributes">
+        <item name="android:layout_marginEnd">99dp</item>
+    </style>
+    <style name="SmallHeaderTextViewMarginAttributesLeft" parent="@style/SmallHeaderTextViewAttributes">
+        <item name="android:layout_marginEnd">211dp</item>
+    </style>
+    <style name="SmallHeaderTextViewMarginAttributesRight" parent="@style/SmallHeaderTextViewAttributes">
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+    <style name="MediumHeaderTextViewMarginAttributesLeft" parent="@style/MediumHeaderTextViewAttributes">
+        <item name="android:layout_marginEnd">211dp</item>
+    </style>
+    <style name="MediumHeaderTextViewMarginAttributesRight" parent="@style/MediumHeaderTextViewAttributes">
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+    <style name="LargeHeaderTextViewMarginAttributesLeft" parent="@style/LargeHeaderTextViewAttributes">
+        <item name="android:layout_marginEnd">308dp</item>
+    </style>
+    <style name="LargeHeaderTextViewMarginAttributesRight" parent="@style/LargeHeaderTextViewAttributes">
+        <item name="android:layout_marginEnd">99dp</item>
+    </style>
+</resources>
