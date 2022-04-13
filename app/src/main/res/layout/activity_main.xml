@@ -204,7 +204,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-1dp"
-        android:layout_marginBottom="574dp"
+        android:layout_marginBottom="567dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/edtTeamName"
@@ -218,7 +218,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="119dp"
-        android:layout_marginBottom="583dp"
+        android:layout_marginBottom="575dp"
         android:text="@string/lblAway" />
 
     <!--Away team Try label-->
@@ -294,7 +294,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="335dp"
-        android:layout_marginBottom="579dp"
+        android:layout_marginBottom="575dp"
         android:text="@string/lblHome" />
 
     <!--Home team name textbox-->
@@ -305,7 +305,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="215dp"
-        android:layout_marginBottom="574dp"
+        android:layout_marginBottom="567dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/edtTeamName"

@@ -2,21 +2,40 @@ package com.lachapelle.christian.scorekeeper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private Hashtable<Integer, String> ids = new Hashtable<Integer, String>();
+    private SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Populate Hashtable to be used by Shared Storage
+        populateHashtable();
+
         // Setup buttons and OnClick listeners
         Button btnHPT = (Button) findViewById(R.id.btnHomePT);
         btnHPT.setOnClickListener(view -> updateScore(btnHPT));
@@ -68,6 +87,117 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnReset = (Button) findViewById(R.id.btnReset);
         btnReset.setOnClickListener(view -> resetScores());
+
+        PreferenceManager.setDefaultValues(this, R.xml.settings, false);
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.about:
+                Toast toast = Toast.makeText(getApplicationContext(),"Created by: Christian Lachapelle\n" +
+                                                                          "Student #: A00230066\n" +
+                                                                          "Course Code: IOT-1009", Toast.LENGTH_SHORT);
+                toast.show();
+                return true;
+            case R.id.settings:
+                Intent settingsIntent = new Intent(getApplicationContext(), Activity_settings.class);
+                startActivity(settingsIntent);
+                return true;
+            case R.id.reset:
+                resetScores();
+                return true;
+        }
+
+        return super.onOptionsItemSelected((item));
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        loadFromLocal(false);
+    }
+    @Override
+    public void onStop(){
+        saveToLocal();
+        super.onStop();
+    }
+
+    @Override
+    public void onRestart(){
+        super.onRestart();
+        loadFromLocal(true);
+    }
+
+
+    // Populate Hashtable to to be used to save/load from the shared storage
+    private void populateHashtable(){
+        ids.put(R.id.edtHomeTeamName, "edt");
+        ids.put(R.id.edtAwayTeamName, "edt");
+        ids.put(R.id.txtAwayCScore, "txt");
+        ids.put(R.id.txtAwayFScore, "txt");
+        ids.put( R.id.txtAwayTScore, "txt");
+        ids.put(R.id.txtAwayDScore, "txt");
+        ids.put(R.id.txtAwayPScore, "txt");
+        ids.put(R.id.txtHomeTScore, "txt");
+        ids.put(R.id.txtHomeCScore, "txt");
+        ids.put(R.id.txtHomeDScore, "txt");
+        ids.put(R.id.txtHomeFScore, "txt");
+        ids.put(R.id.txtHomePScore, "txt");
+    }
+
+    // Save settings from the shared storage
+    public void saveToLocal(){
+        SharedPreferences.Editor editor = prefs.edit();
+        if (prefs.getBoolean("save_values_pref", false)) {
+            EditText et;
+            TextView tv;
+            Enumeration<Integer> e = ids.keys();
+            while (e.hasMoreElements()) {
+                int key = e.nextElement();
+                String keyString = new Integer(key).toString();
+                if (ids.get(key).equals("edt")) {
+                    et = (EditText) findViewById(key);
+                    editor.putString(keyString, et.getText().toString());
+                } else if (ids.get(key).equals("txt")) {
+                    tv = (TextView) findViewById(key);
+                    editor.putString(keyString, tv.getText().toString());
+                }
+            }
+        }
+        else{
+            editor.clear();
+            editor.putBoolean("save_values_pref", false);
+        }
+        editor.apply();
+    }
+
+    // Load settings from the shared storage
+    private void loadFromLocal(boolean resume){
+        if (prefs.getBoolean("save_values_pref", false) || resume) {
+            EditText et;
+            TextView tv;
+            Enumeration<Integer> e = ids.keys();
+            while (e.hasMoreElements()) {
+                int key = e.nextElement();
+                String keyString = new Integer(key).toString();
+
+                if (ids.get(key).equals("edt")) {
+                    et = (EditText) findViewById(key);
+                    et.setText(prefs.getString(keyString, ""));
+                } else if (ids.get(key).equals("txt")) {
+                    tv = (TextView) findViewById(key);
+                    tv.setText(prefs.getString(keyString, "0"));
+                }
+            }
+        }
     }
 
     private void updateScore(View view){
